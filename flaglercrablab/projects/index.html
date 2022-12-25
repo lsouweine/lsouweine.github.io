@@ -84,9 +84,7 @@
       <script src="../scripts/jquery-3.3.1.min.js"></script>
     <script>
         $(function(){
-          var a = $("#nav").load("../navbar.html")
-          /*
-          setTimeout(function() {
+          $("#nav").load("../navbar.html", function(){
             console.log("Ready");
             $(".hrefaddress").each(function(){
                 console.log($(this))
@@ -97,19 +95,8 @@
                 var oldUrl = $(this).attr('src');
                 $(this).attr('src', "../" + oldUrl)
             });
-          }, 500);
-          */
-         if(a){
-          $(".hrefaddress").each(function(){
-                console.log($(this))
-                var oldUrl = $(this).attr('href');
-                $(this).attr('href', "../" + oldUrl)
-            });
-            $(".imgaddress").each(function(){
-                var oldUrl = $(this).attr('src');
-                $(this).attr('src', "../" + oldUrl)
-            });
-         }
+          });
         });
+        
     </script>
 </body>
