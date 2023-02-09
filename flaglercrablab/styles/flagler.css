@@ -49,3 +49,6 @@ p.MsoNormal, li.MsoNormal, div.MsoNormal{
 p.MsoTitle, li.MsoTitle, div.MsoTitle{
     font-size:32.0pt;
 }
+p.MsoTitle2{
+    font-size:20.0pt
+}
