@@ -1,3 +1,51 @@
+body{
+    font-family:'Times New Roman', Times, serif
+}
 .scrollto {
     scroll-margin-top: 85px;
+}
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+#nav{
+    background:rgba(0, 0, 0, 0.5)
+}
+.navbar-toggler-icon{
+    opacity:100%;
+}
+#startimg{
+    max-height: 30%;
+    width:100%;
+    object-fit: cover;
+}
+#nav ul{
+    display: flex;
+}
+#nav ul li a{
+    color:white;
+}
+#nav ul li{
+    border-radius: 5%;
+}
+@media (min-width: 0px){
+    #nav ul li:hover{
+        background: radial-gradient(circle at left, rgba(0,0,255,1), rgba(0,0,0,0))
+    }
+}
+@media (min-width: 768px){
+#nav ul li:hover{
+    background: radial-gradient(circle at center, rgba(0,0,255,1), rgba(0,0,0,0))
+}
+}
+
+
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal{
+    font-size:14.0pt;
+}
+p.MsoTitle, li.MsoTitle, div.MsoTitle{
+    font-size:32.0pt;
 }
